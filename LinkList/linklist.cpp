@@ -67,6 +67,10 @@ void addlast(int data)
     for (temp = start; temp -> next != NULL; temp = temp -> next);
     
     temp->next=node;
+}
+
+void insertAtIndex(int index, int data)
+{
     
 }
 

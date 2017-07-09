@@ -11,6 +11,7 @@
 int main(int argc, const char * argv[]) {
     create(5);
     addlast(6);
+    insertAtIndex(3, 10);
     print();
     
     return 0;
