@@ -83,24 +83,3 @@ void insertAtIndex(int index, int data)
     temp->next=node;
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
