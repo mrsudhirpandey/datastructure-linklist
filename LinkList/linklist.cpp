@@ -54,9 +54,11 @@ void print()
     temp=start;
     do
     {
-        cout<<temp->data;
+        cout<<temp->data<<" ";
         temp=temp->next;
     }while(temp!=NULL);
+    
+    cout<<"\n";
     
 }
 
@@ -71,6 +73,14 @@ void addlast(int data)
 
 void insertAtIndex(int index, int data)
 {
+    LinkList *temp = start;
+    for(int i=1;i< index -1;i++)
+    {
+        temp=temp->next;
+    }
+    LinkList *node = createNode(data);
+    node->next = temp->next;
+    temp->next=node;
     
 }
 
