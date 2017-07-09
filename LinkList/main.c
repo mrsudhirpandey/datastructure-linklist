@@ -11,6 +11,7 @@
 int main(int argc, const char * argv[]) {
     // insert code here...
     printf("Hello, World!\n");
+    printf("It is written from macbook 15inch");
     return 0;
 }
 
