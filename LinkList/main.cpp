@@ -7,11 +7,10 @@
 //
 
 #include <stdio.h>
-
+#include "linklist.hpp"
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    printf("It is written from macbook 15inch");
+    create(5);
+    print();
     return 0;
 }
 

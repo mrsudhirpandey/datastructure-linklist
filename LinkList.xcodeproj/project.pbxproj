@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		85FB3D691F11FA8A00F34E52 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 85FB3D681F11FA8A00F34E52 /* main.c */; };
+		85FB3D691F11FA8A00F34E52 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85FB3D681F11FA8A00F34E52 /* main.cpp */; };
+		85FB3D731F12044100F34E52 /* linklist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85FB3D711F12044100F34E52 /* linklist.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		85FB3D651F11FA8A00F34E52 /* LinkList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LinkList; sourceTree = BUILT_PRODUCTS_DIR; };
-		85FB3D681F11FA8A00F34E52 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		85FB3D681F11FA8A00F34E52 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		85FB3D711F12044100F34E52 /* linklist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = linklist.cpp; sourceTree = "<group>"; };
+		85FB3D721F12044100F34E52 /* linklist.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = linklist.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		85FB3D671F11FA8A00F34E52 /* LinkList */ = {
 			isa = PBXGroup;
 			children = (
-				85FB3D681F11FA8A00F34E52 /* main.c */,
+				85FB3D681F11FA8A00F34E52 /* main.cpp */,
+				85FB3D711F12044100F34E52 /* linklist.cpp */,
+				85FB3D721F12044100F34E52 /* linklist.hpp */,
 			);
 			path = LinkList;
 			sourceTree = "<group>";
@@ -119,7 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85FB3D691F11FA8A00F34E52 /* main.c in Sources */,
+				85FB3D691F11FA8A00F34E52 /* main.cpp in Sources */,
+				85FB3D731F12044100F34E52 /* linklist.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +252,7 @@
 				85FB3D6E1F11FA8A00F34E52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
