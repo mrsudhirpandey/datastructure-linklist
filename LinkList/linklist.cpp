@@ -16,16 +16,21 @@ typedef struct node{
 } LinkList;
 
 LinkList *start = NULL;
-
+LinkList *createNode(int data)
+{
+    LinkList *node =new LinkList;
+    node->data=data;
+    node->next=NULL;
+    return node;
+}
 
 void create(int n)
 {
     LinkList *lastNode = NULL;
     for(int i=0; i< n;i++)
     {
-        LinkList *node = new LinkList;
-        node->data = i + 1;
-        node->next = NULL;
+        
+        LinkList *node = createNode(i+1);
         if(start == NULL) {
             start = node;
             lastNode = start;
@@ -38,10 +43,8 @@ void create(int n)
 
 
 void insertAtStart(int a) {
-    LinkList *node=new LinkList;
-    node->data= a;
+    LinkList *node = createNode(a);
     node->next=start;
-    
     start=node;
 }
 
@@ -57,14 +60,10 @@ void print()
     
 }
 
-void addlast(int b)
+void addlast(int data)
 {
     LinkList *temp;
-    
-    LinkList *node =new LinkList;
-    node->data=b;
-    node->next=NULL;
-
+    LinkList *node = createNode(data);
     for (temp = start; temp -> next != NULL; temp = temp -> next);
     
     temp->next=node;
