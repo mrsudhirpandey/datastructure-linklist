@@ -41,6 +41,7 @@ void insertAtStart(int a) {
     LinkList *node=new LinkList;
     node->data= a;
     node->next=start;
+    
     start=node;
 }
 
@@ -56,7 +57,19 @@ void print()
     
 }
 
+void addlast(int b)
+{
+    LinkList *temp;
+    
+    LinkList *node =new LinkList;
+    node->data=b;
+    node->next=NULL;
 
+    for (temp = start; temp -> next != NULL; temp = temp -> next);
+    
+    temp->next=node;
+    
+}
 
 
 

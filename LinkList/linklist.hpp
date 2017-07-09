@@ -16,3 +16,4 @@
 void create(int n);
 void insertAtStart(int a);
 void print();
+void addlast(int b);

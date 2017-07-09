@@ -10,7 +10,9 @@
 #include "linklist.hpp"
 int main(int argc, const char * argv[]) {
     create(5);
+    addlast(6);
     print();
+    
     return 0;
 }
 
